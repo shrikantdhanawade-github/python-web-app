@@ -1,0 +1,13 @@
+[Unit]
+Description=Project web application service 
+After=multi-user.target
+Conflicts=getty@tty1.service
+
+[Service]
+User=ec2-user
+Type=simple
+ExecStart=/usr/bin/python3 /home/ec2-user/project-webapp/app.py
+StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target

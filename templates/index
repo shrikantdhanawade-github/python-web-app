@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CXLoyalty Password decrypter</title>
+  </head>
+  <body>
+    <h1> Password Decrypter </h1>
+ 
+<form action="/decrypt" method="POST"> 
+  
+  Enter Encrypted Password :&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="enc_password">
+  <br><br>
+  Select Process :&nbsp;&nbsp;&nbsp;&nbsp;
+  <select name="process_identifier">
+    <option value="ff">ff</option>
+    <option value="anyother">anyother</option>
+  </select>
+  <br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" name="submit">Submit</button>
+</form>
+  </body>
+</html>
